@@ -1,0 +1,20 @@
+{
+  "name": "validate-schema",
+  "version": "0.0.1",
+  "repository": "segmentio/validate-schema",
+  "description": "validate objects against redshift schema definitions",
+  "keywords": [
+    "redshift",
+    "schema",
+    "validate"
+  ],
+  "dependencies": {
+    "tableize": "0.0.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "auto-schema": "~0.2.0"
+  },
+  "license": "MIT"
+}
