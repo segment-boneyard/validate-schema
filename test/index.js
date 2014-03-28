@@ -4,6 +4,16 @@ var assert = require('assert');
 
 describe('validate(obj, schema)', function(){
   describe('when valid', function(){
+    it('should ignore nulls', function(){
+      var schema = {
+        user: 'varchar',
+        id: 'float'
+      };
+
+      var ret = validate({}, schema);
+      assert(null == ret);
+    })
+
     it('should return null', function(){
       var schema = {
         user: 'varchar',
